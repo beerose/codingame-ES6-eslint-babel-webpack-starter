@@ -1,6 +1,6 @@
 const { resolve } = require('path');
 const restSpread = require('babel-plugin-transform-object-rest-spread');
-const ClosureCompilerPlugin = require('webpack-closure-compiler');
+// const ClosureCompilerPlugin = require('webpack-closure-compiler');
 
 module.exports = {
   entry: './index.js',
@@ -27,6 +27,7 @@ module.exports = {
     ],
   },
   plugins: [
+    // If you want your code to run faster you can try Closure Compiler
     // new ClosureCompilerPlugin({
     //   jsCompiler: true,
     //   compiler: {
